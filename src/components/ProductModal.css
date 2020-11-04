@@ -1,0 +1,39 @@
+.product__modal{
+  display:none;
+  position:absolute;
+}
+
+.productModal__product > img {
+  object-fit:contain;
+  height:200px;
+}
+
+@media only screen and (max-width: 1710px){
+
+}
+
+@media only screen and (max-width: 1440px){
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .product__modal {
+    display:flex;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+ 
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) { 
+  
+}
+
+@media (max-width: 414px) {
+  
+}

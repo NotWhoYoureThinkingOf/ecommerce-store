@@ -1,0 +1,64 @@
+.threeSections{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  width:100%;
+}
+
+.threeSections > a{
+  display:flex;
+  justify-content: center;
+  width:100%;
+}
+
+.threeSections > a > img{
+  width:50%;
+}
+
+@media only screen and (max-width: 1440px){
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .threeSections{
+    /* display:none; */
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+ 
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .threeSections > a > img{
+    width:100%;
+    object-fit:contain;
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .threeSections{
+    height:210px;
+    max-height:210px;
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+  }
+
+  .threeSections > a{
+    width:100%;
+    height:100%;
+  }
+
+  .threeSections > a > img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+}
+
+@media (max-width: 414px) {
+  
+}

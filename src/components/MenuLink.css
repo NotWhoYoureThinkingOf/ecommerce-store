@@ -1,0 +1,10 @@
+.menuLink > a {
+  color:white;
+  text-decoration:none;
+}
+
+.menuLink > a > h2 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding: 8px 0;
+}

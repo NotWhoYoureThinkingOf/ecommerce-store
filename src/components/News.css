@@ -1,0 +1,96 @@
+.news{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  padding:30px 20px;
+}
+
+.news > h2{
+  font-size:2rem;
+  font-weight:800;
+  margin-bottom: 50px;
+  border-bottom:5px solid black;
+  border-color: rgba(0,0,0,.1);
+}
+
+.news > hr{
+  display:none;
+}
+
+.news__content{
+  display:flex;
+}
+
+.news__articles{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  flex:0.9
+}
+
+.news__releases{
+  border:1px solid rgba(0,0,0,0.03);
+  border-radius:10px;
+  padding:20px;
+  height: fit-content;
+}
+
+.news__releases > h4{
+  margin-bottom:30px;
+  font-size:1.1rem;
+}
+
+@media only screen and (max-width: 1440px){
+  
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .news__releases {
+    display:none;
+  }
+
+  .news__content{
+    justify-content: center;
+  }
+
+  .news__articles{
+    flex:1;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .news > h2 {
+    font-size: 1.4rem;
+    text-align:center;
+    font-weight:500;
+    padding: 0 20px;
+    border:none;
+    margin-bottom:10px;
+    padding-bottom: 10px;
+  }
+
+  .news > hr{
+    display:block;
+    width:100px;
+    color:black;
+    background:black;
+    margin-bottom:50px;
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .news > h2 {
+    font-size: 1.1rem;
+  }
+
+  .news > hr {
+    width: 70px;
+  }
+}
+
+@media (max-width: 414px) {}

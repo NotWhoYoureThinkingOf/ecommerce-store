@@ -1,0 +1,139 @@
+.body{
+  display:flex;
+  height:calc(100vh - 60px);
+  width:100%;
+  overflow:hidden;
+}
+
+.body__left{
+  flex:.7;
+  /* max-height:883px; */
+  overflow:hidden;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.body__left > h2 {
+  position: absolute;
+  background: linear-gradient(to right, rgba(0,0,0,.7) 0%,rgba(0,0,0,0) 100%);
+  text-transform: capitalize;
+  top: 23px;
+  left: 0;
+  padding: 40px 30px;
+  width: 603px;
+  text-align: center;
+  z-index: 10;
+  color: white;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+  font-size: 5rem;
+}
+
+.body__right{
+  display:flex;
+  flex-direction:column;
+  flex:.3;
+  overflow:hidden;
+  height:100%;
+  max-height:calc(100vh - 60px)
+}
+
+.body__rightTop{
+  flex:.5;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  position:relative;
+}
+
+.body__rightTop > h4{
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  background: linear-gradient(to left, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+  text-transform: capitalize;
+  padding: 20px 20px;
+  width:300px;
+  text-align:right;
+  z-index: 10;
+  color: white;
+  font-weight: 600;
+  font-size:2rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+
+.body__rightBottom{
+  flex:.5;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  height:454px;
+  position:relative;
+}
+
+.body__rightBottom > h4{
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  background: linear-gradient(to left, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+  text-transform: capitalize;
+  padding: 20px 20px;
+  width:300px;
+  text-align:right;
+  z-index: 10;
+  color: white;
+  font-weight: 600;
+  font-size:2rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1440px){
+  .body {
+    height: 1;
+  }
+
+  .body__right{
+    height:auto;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .body{
+    flex-direction:column;
+    height: calc(100vh - 76px);
+  }
+
+  .body__left{
+    flex:0.5;
+  }
+
+  .body__right{
+    flex-direction:row;
+    flex:0.5;
+  }
+
+  .body__rightBottom {
+    height: auto;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+@media (max-width: 575.98px) { 
+
+}
+
+@media (max-width: 414px) {  }

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+.threeSection{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction:column;
+  position: relative;
+  height:100%;
+  cursor:pointer;
+  overflow-y: visible;
+}
+
+.threeSection:hover > .threeSection__bg{
+  opacity:.8;
+  height:100vh
+}
+
+.threeSection__bg{
+  position: absolute;
+  height:0%;
+  width:350px;
+  transform:skewX(-10deg);
+  margin-left:50px;
+  z-index:0;
+  opacity:0;
+  transition: all .2s ease-in-out; 
+}
+
+.threeSection__info{
+  position:relative;
+}
+
+.threeSection__info > p{
+  color:white;
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow:0px 2px 3px rgba(0,0,0,.75);
+  font-size: 2.5rem;
+  font-weight:700;
+  z-index:10;
+}
+
+.threeSection__info > a{
+  opacity:0;
+  visibility: hidden;
+  z-index:10;
+}
+
+.threeSection > img{
+  object-fit:contain;
+  width:400px;
+  height:400px;
+  margin-bottom:40px;
+  z-index:10;
+}

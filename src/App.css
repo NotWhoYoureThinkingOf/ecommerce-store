@@ -1,0 +1,15 @@
+.app{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+@media (max-width: 575.98px) { 
+  .app {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 414px) {
+  
+}

@@ -1,0 +1,127 @@
+.modal{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:100;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__background{
+  background: rgba(0,0,0,0.7);
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.modal__product{
+  background:white;
+  position:absolute;
+  height:fit-content;
+  max-width:800px;
+  padding:20px;
+  padding: 60px 40px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.modal__product > img{
+  object-fit:contain;
+  height:300px;
+  width:300px;
+  margin-right:50px;
+}
+
+.modal__info{
+  margin-right: 10px;
+  max-width: 300px;
+}
+
+.modal__info > h2{
+  margin-bottom:5px
+}
+
+.modal__info > span > .MuiSvgIcon-root{
+  font-size:1rem;
+  margin-bottom:15px;
+}
+
+.modal__description{
+  font-size:.95rem;
+  margin-bottom: 50px
+}
+
+.modal__bottom{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.modal__price{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal__bottom > button {
+  background:#11ABB0;
+  color:white;
+  transition: all .1s ease-in;
+}
+
+.modal__bottom > button:hover {
+  background:#39dcf1;
+}
+
+.modal__bottom > button > .MuiButton-label{
+  text-transform:capitalize;
+  font-weight:600;
+  padding:5px;
+  font-size:1.1rem;
+}
+
+.modal__close{
+  position:absolute;
+  top: -50px;
+  right:-50px;
+  cursor:pointer;
+}
+
+.modal__close > .MuiSvgIcon-root{
+  color:white;
+  height: 2em;
+  width: 2em;
+}
+
+@media only screen and (max-width: 1710px){
+
+}
+
+@media only screen and (max-width: 1440px){
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .modal {
+    display:none;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+ 
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) { 
+  
+}
+
+@media (max-width: 414px) {
+  
+}

@@ -1,0 +1,186 @@
+.footer{
+  background-color:#111;
+  color:white;
+  display:flex;
+  padding:50px 100px;
+  justify-content: space-between;
+  overflow:hidden;
+}
+
+.footer__left{
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  flex:.2;
+}
+
+.footer__left > h4{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.footer__left > input{
+  padding:10px;
+  outline:none;
+  border:none;
+  margin-bottom: 15px;
+  background-color:#444;
+  color:white
+}
+
+.footer__left > input:focus{
+  background-color:#fff;
+  color:#111;
+}
+
+.footer__left > button{
+  transition:all .1s ease-in;
+}
+
+.footer__left > button > .MuiButton-label{
+  transition:all .1s ease-in;
+}
+
+.footer__left > button:hover{
+  background-color:white;
+  color:#111;
+}
+
+.footer__left::after{
+  left:126%;
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 500px;
+  transform: rotate(65deg);
+  transform-origin: 0;
+  border-top: 1px solid white;
+}
+
+.footer__left > button{
+  border:1px solid white;
+  color:white;
+}
+
+.footer__center{
+  display:flex;
+  flex:1;
+  justify-content: space-between;
+  max-width:500px;
+  position:relative;
+  margin:0 50px;
+}
+
+.footer__center::after{
+  left:115%;
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 500px;
+  transform: rotate(65deg);
+  transform-origin: 0;
+  border-top: 1px solid white;
+}
+
+.footer__center > ul > li{
+  list-style:none;
+  margin-bottom:8px;
+  font-size:.8rem;
+  color:lightgray;
+  cursor:pointer;
+  transition: all .1s ease-in;
+}
+
+.footer__center > ul > li:hover{
+  color:white;
+  transform: translateX(3px)
+}
+
+.footer__listHeader{
+  margin-bottom:15px !important;
+  font-size:1rem !important;
+  font-weight:700;
+  color:white !important;
+}
+
+.footer__listHeader:hover{
+  transform: translateX(0px) !important;
+}
+
+.footer__right > h4{
+  margin-bottom:20px;
+}
+
+.footer__rightSocials{
+  display:flex;
+  justify-content: space-between;
+}
+
+.footer__rightSocials > .MuiSvgIcon-root{
+  transition: all .1s ease-in;
+  cursor:pointer;
+}
+
+.footer__rightSocials > .MuiSvgIcon-root:hover{
+  transform:scale(1.2);
+  color: rgb(0, 195, 255)
+}
+
+@media only screen and (max-width: 1560px){
+  .footer__left::after{
+    display:none
+  }
+  
+  .footer__center::after{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 1440px){
+  
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__left{
+    flex:none;
+    order:2;
+    margin: 50px 0;
+    max-width: 340px;
+  }
+
+  .footer__center{
+    flex:none;
+    margin:0;
+    max-width: 425px;
+    order:3
+  }
+
+  .footer__right{
+    flex:none;
+    order:1;
+    text-align: center;
+  }
+
+  .footer__list{
+    margin: 0 20px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) { 
+  
+}
+
+@media (max-width: 414px) {}

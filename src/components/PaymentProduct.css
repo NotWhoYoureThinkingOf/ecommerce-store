@@ -1,0 +1,79 @@
+.paymentProduct{
+  display:flex;
+  align-items:center;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.paymentProduct__image{
+  object-fit:contain;
+  width:100px;
+  height:100px;
+}
+
+.paymentProduct__info{
+  padding-left:20px;
+  display:flex;
+  flex-direction:column;
+}
+
+.paymentProduct__title{
+  font-size:17px;
+  font-weight:700;
+}
+
+.paymentProduct__description{
+  font-size:.8rem;
+}
+
+.paymentProduct__price{
+  margin-bottom:5px;
+  font-weight:500;
+}
+
+.paymentProduct__rating{
+  display:flex;
+  margin-bottom:10px;
+}
+
+.paymentProduct__rating > .MuiSvgIcon-root{
+  width: 0.8em;
+  height: .8em;
+}
+
+.paymentProduct__info > button {
+  padding:5px;
+  border: 1px solid;
+  border-radius: 3px;
+  color:#111;
+  cursor:pointer;
+  width:fit-content;
+  background-color: #339DFF;
+  color:white;
+  outline:none;
+  border:none;
+}
+
+@media only screen and (max-width: 1440px){}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) { 
+  .paymentProduct__title{
+    font-size:1rem;
+  }
+
+  .paymentProduct__rating > .MuiSvgIcon-root{
+    width: 0.7em;
+    height: .7em;
+  }
+}
+
+@media (max-width: 414px) {}

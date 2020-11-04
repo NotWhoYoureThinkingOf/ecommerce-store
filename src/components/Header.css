@@ -1,0 +1,407 @@
+.header{
+  background:#111;
+  color:white;
+  height:fit-content;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding-bottom: 10px;
+}
+
+.header__menuScreen{
+  display:none;
+}
+
+.header__menuScreenContainer{
+  display:none;
+  /* position:absolute; */
+}
+
+.header__container{
+  padding: 0 50px;
+  height:100%;
+  width:100%;
+}
+
+.header__logo {
+  flex:.3;
+}
+
+.header__logo > img {
+  object-fit:contain;
+  height:40px;
+}
+
+.header__links{
+  display:flex;
+  justify-content: center;
+}
+
+.header__linksContainer{
+  flex:.3;
+  display:flex;
+  justify-content: space-between;
+  font-size:1rem;
+}
+
+.header__linksContainer p{
+  padding:10px 20px;
+  width:max-content;
+  transition: all .1s ease-in;
+  cursor:pointer;
+  border-radius:30px;
+}
+
+.header__linksContainer p:hover{
+  background: rgb(255, 40, 38)
+}
+
+.header__menu {
+  display:none;
+}
+
+.header__top{
+  display:flex;
+  justify-content: space-between;
+  padding-top:10px;
+}
+
+.header__searchbar{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex: 1 1;
+  margin: 0 35px;
+}
+
+.header__searchbar > input{
+  padding:10px;
+  border-radius:999px;
+  border:none;
+  outline:none;
+  margin-right:10px;
+  flex:1;
+  text-align:center;
+}
+
+.header__searchbar > .MuiSvgIcon-root{
+  cursor:pointer;
+  font-size:1.7rem;
+}
+
+
+.header__right{
+  display:flex;
+}
+
+.header__login{
+  display:flex;
+  align-items:center;
+  margin-right:10px;
+}
+
+.header__loginIcon{
+  margin-right:10px;
+  cursor:pointer;
+}
+
+.header__login > button{
+  background: none;
+  border: none;
+  outline:none;
+  color: white;
+  cursor:pointer;
+}
+
+.header__login > button > h3{
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.header__user > h4{
+  font-weight:400;
+}
+
+.header__user > p{
+  font-size: .8rem;
+  text-align: center;
+  opacity: .5;
+  cursor:pointer;
+}
+
+.header__orders{
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size:1rem;
+  margin: 0 30px;
+}
+
+.header__cart{
+  display:flex;
+  align-items:center;
+  color:white;
+  text-decoration: none;
+}
+
+.header__cart p{
+  transform: translateY(-1px);
+}
+
+.header__cart p > span{
+  color: rgb(255, 45, 8)
+}
+
+.header__cartIcon{
+  margin-right:5px;
+}
+
+.header__cartCount{
+  display:none;
+}
+
+.header__mobileCart{
+  display:none;
+}
+
+
+@media only screen and (max-width: 1440px){
+  .header__menuScreen{
+    display:flex;
+    position:absolute;
+  }
+
+  .header__menuScreenContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .header__menuLogin {
+    margin-bottom:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__menuLogin > .MuiAvatar-root{
+    height: 80px;
+    width: 80px;
+  }
+
+  .header__menuLoginIcon {
+    margin-bottom:10px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .header__menuLoginIcon > .MuiAvatar-img{
+    height: 80px;
+    width: 80px;
+  }
+
+  .header__menuUserName{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .header__menuUser > p{
+    text-align: center;
+    font-size: .9rem;
+  }
+
+  .header__menuLogin > button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    border:2px solid white;
+    padding:5px;
+    border-radius:5px;
+  }
+
+  .header__menuLogin > button > h3 {
+    font-weight:400 !important;
+  }
+  
+  .header__container{
+    padding: 0 30px;
+  }
+  
+  .header__top{
+    align-items:center;
+  }
+  
+  .header__menu {
+    display:flex;
+    flex:0.1;
+    cursor:pointer;
+    padding: 10px;
+  }
+
+  .header__menu > .MuiSvgIcon-root{
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .header__logo {
+    flex: 0.33 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__logo > img {
+    object-fit: contain;
+    height: 40px;
+  }
+  
+  .header__links{
+    display:none;
+  }
+
+  .header__searchbar{
+    display:none;
+  }
+
+  .header__searchbar > input{
+    display:none;
+  }
+
+  .header__right{
+    display: flex;
+    justify-content: space-around;
+    flex: 0.1;
+  }
+
+  .header__login{
+    /* padding:10px; */
+  }
+
+  .header__login > button{
+    display:none;
+  }
+
+  .header__loginIcon{
+    margin-right:0px;
+    cursor:pointer;
+    /* padding:10px; */
+  }
+
+  .header__user{
+    display:none;
+  }
+
+  .header__orders{
+    display: none;
+  }
+
+  .header__cart{
+    position:relative;
+    margin-left:10px;
+  }
+
+  .header__cart > .MuiSvgIcon-root {
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  .header__cart p{
+    transform: translateY(0px);
+  }
+
+  .header__cartInfo {
+    display:none;
+  }
+
+  .header__cartCount{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: rgb(255, 45, 8);
+    color:white;
+    font-size: .8rem;
+    border-radius:50px;
+    height:17px;
+    width:17px;
+    position:absolute;
+    top: 2px;
+    right: 5px;
+  }
+
+  .header__cart p > span {
+    color: white;
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+  .header__container{
+    padding: 0;
+    padding-left:10px;
+    display:flex;
+    align-items:center;
+  }
+
+  .header__top{
+    width:100%;
+  }
+
+  .header__right{
+    display: none;
+  }
+
+  .header__menu {
+    order:3
+  }
+
+  .header__menu > .MuiSvgIcon-root{
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .header__logo {
+    order:1;
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .header__mobileCart{
+    display:flex;
+    order:2;
+    position:relative;
+    color:white;
+    margin: 0 10px;
+  }
+
+  .header__mobileCart > .MuiSvgIcon-root{
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .header__mobileCartCount{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: rgb(255, 45, 8);
+    color:white;
+    font-size: .8rem;
+    border-radius:50px;
+    height:17px;
+    width:17px;
+    position:absolute;
+    top: -5px;
+    right: -4px;
+  }
+}
+
+@media (max-width: 414px) {}
