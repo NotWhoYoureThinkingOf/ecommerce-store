@@ -5,6 +5,7 @@
 
 .carouselHolder h2{
   text-align:center;
+  display:none;
 }
 
 .carouselHolder li{
@@ -18,6 +19,10 @@
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .carouselHolder{
+    display:block;
+  }
+
+  .carouselHolder h2{
     display:block;
   }
 }
